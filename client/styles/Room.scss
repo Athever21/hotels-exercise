@@ -1,0 +1,56 @@
+.room {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  border-bottom: 1px solid rgb(172, 172, 172);
+}
+
+.room-info {
+  width: 20%;
+  padding-right: 0.5rem;
+  border-right: 1px solid #b4b1b1;
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  p {
+    margin: 0.3rem 0;
+    font-size: 0.9rem;
+  }
+}
+
+.room-desc {
+  width: 80%;
+  padding-left: 1rem;
+  text-align: justify;
+}
+
+@media screen and (max-width: 800px) {
+  .room-desc {
+    width: 70%;
+  }
+
+  .room-info {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .room {
+    flex-direction: column;
+  }
+
+  .room-desc {
+    width: 100%;
+    padding-top: 1rem;
+  }
+
+  .room-info {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #837f7f;
+    border-right: 0;
+  }
+}
