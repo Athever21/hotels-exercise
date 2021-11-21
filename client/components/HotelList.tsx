@@ -8,7 +8,7 @@ const SingleHotel = lazy(() => import("@/components/SingleHotel"));
 const HotelList = () => {
   const { hotels, loading } = useHotel();
 
-  if (loading) return <Loading />;
+  if (loading) return <div className="load-hotels"><Loading /></div>;
 
   return (
     <main className="hotel-list">
